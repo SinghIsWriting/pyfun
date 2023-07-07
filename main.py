@@ -4,6 +4,7 @@ colorama.init(autoreset=True)
 
 import emoticons
 import facts
+import jokes
 
 options = '''
 [1]     Feelings of Emoticons
@@ -21,8 +22,10 @@ while(True):
     usr = input("Enter option: ")
     if usr == "1":
         emoticons.tell_about()
-    if usr == "2":
+    elif usr == "2":
         facts.tell()
+    elif usr == "3":
+        jokes.get()
     elif usr == "6":
         print("\nThanks for using this script :)")
         break
