@@ -5,6 +5,7 @@ colorama.init(autoreset=True)
 import emoticons
 import facts
 import jokes
+import randJoke
 
 options = '''
 [1]     Feelings of Emoticons
@@ -26,6 +27,8 @@ while(True):
         facts.tell()
     elif usr == "3":
         jokes.get()
+    elif usr == "4":
+        randJoke.jok()
     elif usr == "6":
         print("\nThanks for using this script :)")
         break
