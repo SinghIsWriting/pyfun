@@ -1,4 +1,8 @@
+import colorama
+from colorama import Fore
+colorama.init(autoreset=True)
 
+import emoticons
 
 options = '''
 [1]     Feelings of Emoticons
@@ -15,4 +19,9 @@ while(True):
     print(options)
     usr = input("Enter option: ")
     if usr == "1":
-        pass
+        emoticons.tell_about()
+    elif usr == "6":
+        print("\nThanks for using this script :)")
+        break
+    else:
+        print(f"{Fore.RED}WARNING: Invalid Input!\n")
