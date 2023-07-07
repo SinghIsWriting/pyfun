@@ -6,6 +6,7 @@ import emoticons
 import facts
 import jokes
 import randJoke
+import fake
 
 options = '''
 [1]     Feelings of Emoticons
@@ -29,6 +30,8 @@ while(True):
         jokes.get()
     elif usr == "4":
         randJoke.jok()
+    elif usr == "5":
+        fake.profile()
     elif usr == "6":
         print("\nThanks for using this script :)")
         break
